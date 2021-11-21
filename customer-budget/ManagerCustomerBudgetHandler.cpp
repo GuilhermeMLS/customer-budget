@@ -4,7 +4,7 @@
 
 void ManagerCustomerBudgetHandler::handle(CustomerBudget customerBudget) {
     if (customerBudget.getAmount() < 5000) {
-        std::cout << "Manager has handled the customerBudget budget" << std::endl;
+        std::cout << "Manager has handled the customer budget" << std::endl;
     }
     return AbstractHandler::handle(customerBudget);
 }
