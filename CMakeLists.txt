@@ -16,4 +16,6 @@ add_executable(
         customer-budget/ManagerCustomerBudgetHandler.cpp
         customer-budget/DirectorCustomerBudgetHandler.hpp
         customer-budget/DirectorCustomerBudgetHandler.cpp
+        customer-budget/CfoCustomerBudgetHandler.hpp
+        customer-budget/CfoCustomerBudgetHandler.cpp
 )
