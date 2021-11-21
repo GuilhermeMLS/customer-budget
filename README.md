@@ -1,7 +1,5 @@
-#TODO
-1) class destructors
-2) see if there is something else from the online classes I should implement
+# Customer Budget Approval
+## A Chain of Responsibility implementation
 
-#TODO 2
-1) Concrete handlers
-2) main script
+Project made to show a concrete example of the Chain of Responsibility design pattern
+during a presentation to UFPR's Software Development Practice class (Nov 2021).
