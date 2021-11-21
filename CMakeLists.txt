@@ -3,4 +3,13 @@ project(order)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(customer-budget main.cpp Handler.hpp AbstractHandler.cpp ClientBudget.cpp ClientBudget.hpp)
+add_executable(
+    customer-budget
+    main.cpp
+    Handler.hpp
+        AbstractHandler.hpp
+    ClientBudget.cpp
+    ClientBudget.hpp
+    SellerBudgetHandler.cpp
+    SellerBudgetHandler.hpp
+)
