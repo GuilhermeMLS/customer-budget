@@ -18,7 +18,7 @@ public:
         return handler;
     }
 
-    void handle(T request) override {
+    void handle(T* request) override {
         if (this->nextHandler) {
             return this->nextHandler->handle(request);
         }

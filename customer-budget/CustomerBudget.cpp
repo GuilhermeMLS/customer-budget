@@ -1,3 +1,4 @@
+#include <iostream>
 #include "CustomerBudget.hpp"
 
 CustomerBudget::CustomerBudget(float amount): amount{amount} {}
@@ -16,4 +17,9 @@ void CustomerBudget::setAmount(float value) {
 
 bool CustomerBudget::isApproved() const {
     return this->approved;
+}
+
+void CustomerBudget::print() const {
+    std::cout << "Customer Budget: " << this->amount << std::endl;
+    std::cout << "Approved: " << (this->approved ? "Yes" : "No") << std::endl;
 }

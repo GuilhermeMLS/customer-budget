@@ -6,7 +6,7 @@
 
 class SellerCustomerBudgetHandler : public AbstractHandler<CustomerBudget> {
 public:
-    void handle(CustomerBudget customerBudget) override;
+    void handle(CustomerBudget* customerBudget) override;
 };
 
 #endif

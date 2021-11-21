@@ -11,6 +11,7 @@ public:
     void setAmount(float value);
     bool isApproved() const;
     void approve();
+    void print() const;
 };
 
 #endif

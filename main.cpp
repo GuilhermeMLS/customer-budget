@@ -16,7 +16,9 @@ int main() {
 
     CustomerBudget customerBudget { 10001 };
 
-    seller->handle(customerBudget);
+    seller->handle(&customerBudget);
+
+    customerBudget.print();
 
     return 0;
 }
