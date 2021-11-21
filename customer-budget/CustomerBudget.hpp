@@ -1,12 +1,12 @@
-#ifndef CLIENT_BUDGET
-#define CLIENT_BUDGET
+#ifndef CUSTOMER_BUDGET
+#define CUSTOMER_BUDGET
 
-class ClientBudget {
+class CustomerBudget {
 private:
     bool approved{};
     float amount;
 public:
-    explicit ClientBudget(float amount);
+    explicit CustomerBudget(float amount);
     float getAmount() const;
     void setAmount(float value);
     bool isApproved() const;

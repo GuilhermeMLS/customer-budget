@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(
     customer-budget
     main.cpp
-    Handler.hpp
-        AbstractHandler.hpp
-    ClientBudget.cpp
-    ClientBudget.hpp
-    SellerBudgetHandler.cpp
-    SellerBudgetHandler.hpp
+        chain-of-responsibility/Handler.hpp
+        chain-of-responsibility/AbstractHandler.hpp
+        customer-budget/CustomerBudget.cpp
+        customer-budget/CustomerBudget.hpp
+        customer-budget/SellerBudgetHandler.cpp
+        customer-budget/SellerBudgetHandler.hpp
 )
