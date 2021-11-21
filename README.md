@@ -22,6 +22,15 @@ $ ./customer-budget-approval {budget}
 ```
 Where `{budget}` is an arbitrary number representing the total amount of the Customer Budget to be approved.
 
+Output example:
+```
+$ ./customer-budget-approval 1000
+Manager has handled the customer budget
+Customer Budget: 1000
+Approved: Yes
+```
+
+
 ## Cleaning
 ```
 $ make clean
