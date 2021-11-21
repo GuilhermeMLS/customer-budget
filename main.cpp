@@ -5,8 +5,7 @@
 #include "customer-budget/DirectorCustomerBudgetHandler.hpp"
 #include "customer-budget/CfoCustomerBudgetHandler.hpp"
 
-int main() {
-
+int main(int argc, char *argv[]) {
     auto *seller = new SellerCustomerBudgetHandler;
     auto *manager = new ManagerCustomerBudgetHandler;
     auto *director = new DirectorCustomerBudgetHandler;
@@ -14,7 +13,10 @@ int main() {
 
     seller->setNext(manager)->setNext(director)->setNext(cfo);
 
-    CustomerBudget customerBudget { 10001 };
+    std::string input(argv[1]);
+    float customerBudgetAmount = std::stof(input);
+
+    CustomerBudget customerBudget { customerBudgetAmount };
 
     seller->handle(&customerBudget);
 
