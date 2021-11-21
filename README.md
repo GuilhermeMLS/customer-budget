@@ -18,9 +18,14 @@ $ make
 ```
 ### Running
 ```
-$ ./customer-budget {budget}
+$ ./customer-budget-approval {budget}
 ```
 Where `{budget}` is an arbitrary number representing the total amount of the Customer Budget to be approved.
+
+## Cleaning
+```
+$ make clean
+```
 
 ### Architecture
 ![Class Diagram](class-diagram.png)
